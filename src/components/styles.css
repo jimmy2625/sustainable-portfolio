@@ -1,0 +1,94 @@
+.investment-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.investment-item:hover {
+    transform: scale(1.02); /* Add a slight hover effect */
+}
+
+.investment-details {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.investment-amount {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.investment-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.delete-button {
+    background-color: #ff0800;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.delete-button:hover {
+    background-color: #b2180a;
+}
+
+.edit-button {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 5px; /* Add some margin for spacing */
+}
+
+.edit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.investment-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.investment-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.investment-form button {
+    background-color: #4ae028;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.investment-form button:hover {
+    background-color: #4ca50c;
+}
+
+.investment-list {
+    list-style-type: none; /* Remove bullet points from list items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
