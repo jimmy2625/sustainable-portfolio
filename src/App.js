@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Import your global CSS file
+import './components/styles.css';
 import InvestmentForm from './components/InvestmentForm';
 import InvestmentList from './components/InvestmentList';
 import EditInvestmentForm from './components/EditInvestmentForm';
@@ -7,7 +7,7 @@ import EditInvestmentForm from './components/EditInvestmentForm';
 function App() {
   const [investments, setInvestments] = useState([]);
   const [editingInvestmentId, setEditingInvestmentId] = useState(null);
-  const [isFormVisible, setIsFormVisible] = useState(false); 
+  const [isFormVisible, setIsFormVisible] = useState(false);
 
   // Function to add a new investment
   const addInvestment = (newInvestment) => {
