@@ -1,11 +1,20 @@
 .container {
-    max-width: 800px; /* Set the maximum width of the container */
+    width: 80%; /* Set a percentage width instead of a fixed value */
+    max-width: 500px; /* Set a maximum width to limit container size on larger screens */
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px; /* Add some padding to the container */
-    margin-top: 20px;
     background-color: #f0f0f0; /* Background color for the container */
     border-radius: 20px;
     text-align: center;
+    margin-top: 50px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust the width for smaller screens */
+        max-width: none; /* Remove the maximum width restriction */
+    }
 }
 
 .form-button {

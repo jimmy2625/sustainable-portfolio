@@ -3,6 +3,8 @@ import './components/styles.css';
 import InvestmentForm from './components/InvestmentForm';
 import InvestmentList from './components/InvestmentList';
 import EditInvestmentForm from './components/EditInvestmentForm';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [investments, setInvestments] = useState([]);
@@ -37,6 +39,7 @@ function App() {
 
   return (
     <div className="App">
+      <ToastContainer />
       <div className="container">
         <h1>Sustainable Investment Portfolio</h1>
         <button className="form-button" onClick={() => setIsFormVisible(!isFormVisible)}>
