@@ -23,7 +23,7 @@ const InvestmentForm = ({ addInvestment }) => {
     addInvestment(investment);
     setInvestment({ name: '', category: '', amount: '', date: '' });
 
-    toast.success('An investment has been added.', {
+    toast.success('An investment has been added!', {
       position: toast.POSITION.TOP_CENTER,
       autoClose: 2000,
       hideProgressBar: true
@@ -50,6 +50,7 @@ const InvestmentForm = ({ addInvestment }) => {
       />
       <input
         type="number"
+        min="1"
         name="amount"
         placeholder="Amount invested"
         value={investment.amount}

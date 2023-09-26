@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.css'; 
 import Swal from 'sweetalert2'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const InvestmentItem = ({ investment, deleteInvestment, editInvestment }) => {
 
@@ -12,6 +14,12 @@ const InvestmentItem = ({ investment, deleteInvestment, editInvestment }) => {
       confirmButtonColor: '#ff0800',
     }).then((result) => {
       if (result.isConfirmed) {
+        toast.success('An investment has been deleted!', {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 2000,
+          hideProgressBar: true
+        });
+
         deleteInvestment(investment.id);
       } 
     })

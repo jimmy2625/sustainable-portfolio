@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const EditInvestmentForm = ({ investment, updateInvestment }) => {
   const [editedInvestment, setEditedInvestment] = useState({ ...investment });
@@ -14,6 +16,13 @@ const EditInvestmentForm = ({ investment, updateInvestment }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    toast.success('An investment has been edited!', {
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: 2000,
+      hideProgressBar: true
+    });
+
     updateInvestment(editedInvestment);
   };
 
