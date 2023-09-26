@@ -1,11 +1,9 @@
-// InvestmentList.js
-
 import React, { useState } from 'react';
 import InvestmentItem from './InvestmentItem';
-import './styles.css'; // Import your CSS file
+import './styles.css'; 
 
 const InvestmentList = ({ investments, deleteInvestment, editInvestment }) => {
-  const [selectedCategory, setSelectedCategory] = useState('All'); // State for selected category
+  const [selectedCategory, setSelectedCategory] = useState('All'); 
 
   // Function to handle category selection change
   const handleCategoryChange = (e) => {

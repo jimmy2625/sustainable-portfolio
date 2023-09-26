@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css'; 
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const InvestmentForm = ({ addInvestment }) => {
@@ -31,43 +31,40 @@ const InvestmentForm = ({ addInvestment }) => {
   };
 
   return (
-    <div>
-      <ToastContainer />
-      <form onSubmit={handleSubmit} className="investment-form">
-        <input
-          type="text"
-          name="name"
-          placeholder="Investment name"
-          value={investment.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="category"
-          placeholder="Investment category"
-          value={investment.category}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="number"
-          name="amount"
-          placeholder="Amount invested"
-          value={investment.amount}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="date"
-          name="date"
-          value={investment.date}
-          onChange={handleChange}
-          required
-        />
-        <button type="submit">Add Investment</button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit} className="investment-form">
+      <input
+        type="text"
+        name="name"
+        placeholder="Investment name"
+        value={investment.name}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="text"
+        name="category"
+        placeholder="Investment category"
+        value={investment.category}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="number"
+        name="amount"
+        placeholder="Amount invested"
+        value={investment.amount}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="date"
+        name="date"
+        value={investment.date}
+        onChange={handleChange}
+        required
+      />
+      <button type="submit">Add Investment</button>
+    </form>
   );
 };
 

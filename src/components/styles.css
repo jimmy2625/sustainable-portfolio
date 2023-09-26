@@ -1,9 +1,9 @@
 .container {
-    width: 80%; /* Set a percentage width instead of a fixed value */
-    max-width: 500px; /* Set a maximum width to limit container size on larger screens */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add some padding to the container */
-    background-color: #f0f0f0; /* Background color for the container */
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
     border-radius: 20px;
     text-align: center;
     margin-top: 50px;
@@ -12,8 +12,8 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* Adjust the width for smaller screens */
-        max-width: none; /* Remove the maximum width restriction */
+        width: 90%;
+        max-width: none;
     }
 }
 
@@ -42,7 +42,7 @@
 }
 
 .investment-item:hover {
-    transform: scale(1.02); /* Add a slight hover effect */
+    transform: scale(1.02);
 }
 
 .investment-details {
@@ -77,18 +77,18 @@
 }
 
 .edit-button {
-    background-color: #007bff; /* Blue background color */
-    color: white; /* White text color */
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 4px;
     padding: 5px 10px;
     font-size: 14px;
     cursor: pointer;
-    margin-left: 5px; /* Add some margin for spacing */
+    margin-left: 5px;
 }
 
 .edit-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 .investment-form {
@@ -122,9 +122,9 @@
 }
 
 .investment-list {
-    list-style-type: none; /* Remove bullet points from list items */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .category-filter {

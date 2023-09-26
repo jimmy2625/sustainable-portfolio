@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './components/styles.css';
 import InvestmentForm from './components/InvestmentForm';
 import InvestmentList from './components/InvestmentList';
 import EditInvestmentForm from './components/EditInvestmentForm';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './components/styles.css';
 
 function App() {
   const [investments, setInvestments] = useState([]);
